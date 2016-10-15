@@ -1,0 +1,27 @@
+---
+layout: default
+permalink: /news/
+title: News
+menu_title: News
+menu_position: 1
+---
+
+<div class="row">
+<div class="col-xs-12">
+<h1>News</h1>
+</div>
+</div>
+
+{% for post in site.posts %}
+  <div class="row">
+  <div class="col-xs-12">
+    <h2>
+      <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title | escape }}</a>
+      <small class="pull-right">{{ post.date | date: "%b %-d, %Y" }}</small>
+    </h2>
+    
+    {{ post.excerpt }}
+  
+  </div>
+  </div>
+{% endfor %}

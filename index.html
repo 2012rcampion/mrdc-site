@@ -1,0 +1,19 @@
+---
+layout: default
+title: Home
+---
+
+<div class="row extra-margin">
+  
+  {% assign menu_pages = site.html_pages | sort: 'menu_position' %}
+  {% for p in menu_pages %}
+    {% if p.menu_position %}
+      <div class="col-sm-6">
+        <a href="{{ p.url }}" class="btn btn-block btn-lg btn-primary">
+          <h1>{{ p.title }}</h1>
+        </a>
+      </div>
+    {% endif %}
+  {% endfor %}
+
+</div>

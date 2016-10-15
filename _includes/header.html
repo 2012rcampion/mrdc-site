@@ -1,0 +1,37 @@
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-left" href="{{ site.baseurl }}/">
+        <!--img alt="MRDC" src="{{ site.baseurl }}/assets/mrdc-logo-transparent-small.png" height="50"-->
+        {% img mrdc-logo-transparent-small alt:MRDC height:50px width:auto %}
+        <!--Midwestern Robotics Design Competition-->
+      </a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      
+      
+      <ul class="nav navbar-nav">
+        {% assign menu_pages = site.html_pages | sort: 'menu_position' %}
+        {% for p in menu_pages %}
+          {% if p.menu_position %}
+            <li {% if p.url == page.url %}class="active"{% endif %}>
+              <a href="{{ p.url }}" >
+                {{ p.menu_title }}
+              </a>
+            </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+      
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>

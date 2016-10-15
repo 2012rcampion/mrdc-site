@@ -1,0 +1,8 @@
+{% assign latest_post = site.posts[0] %}
+{% if latest_post.url != page.url %}
+<a href="{{ latest_post.url | prepend: site.baseurl }}">
+<div class="alert alert-info">
+<p class="lead">Latest: {{ latest_post.title }}</p>
+</div>
+</a>
+{% endif %}
