@@ -10,7 +10,7 @@ menu_position: 10
 
 Every March, robotics teams from Universities across the Midwest converge upon the University of Illinois at Urbana-Champaign for a two-day competition that tests their skills and creativity.  The Midwestern Robotics Design Competition is an annual competition that started in 1987, making it is one of the oldest continuing robotics competitions in America.  It predates both Battlebots and the high school oriented FIRST Robotics Competition by several years.  
 
- The competition was originally named for Walter Jeremiah Sanders III: a co-founder and longtime CEO of AMD (as well as a University of Illinois graduate). The competition is organized and administrated by University of Illinois students.
+ The competition was originally named for Walter Jeremiah Sanders III: a co-founder and longtime CEO of AMD (as well as an University of Illinois graduate). The competition is organized and administrated by University of Illinois students.
 
 ### Event Information
 
