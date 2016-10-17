@@ -3,4 +3,5 @@ _site
 .jekyll-metadata
 .asset-cache
 Gemfile.lock
+_assets/bower/
 *~

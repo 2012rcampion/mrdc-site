@@ -51,6 +51,6 @@ assets:
     # - _assets/fonts
     - _assets/img
     - _assets/js
-    # - _assets/bower
+    - _assets/bower
 
   #
