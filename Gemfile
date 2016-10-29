@@ -13,6 +13,7 @@ gem "jekyll", "3.2.1"
 gem "jekyll-assets", "2.2.8"
 gem "autoprefixer-rails", "6.5.1"
 gem "bootstrap-sass", "3.3.7"
+gem "jquery-rails", "4.2.1"
 
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
 # gem "minima"
