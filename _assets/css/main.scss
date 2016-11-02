@@ -4,20 +4,6 @@
 
 @charset "utf-8";
 
-$navbar-height: 60px;
-
-$font-family-sans-serif: "Roboto", sans-serif;
-$headings-font-family: "Cabin", sans-serif;
-
+@import "variables.scss";
 @import "bootstrap";
-
-body { padding-top: $navbar-height + 20px; }
-
-nav img { height: $navbar-height; width: auto; }
-
-.extra-margin * {
-  margin-top: 8px;
-  margin-bottom: 8px;
-}
-
-footer { padding-top: 24px; }
+@import "theme.scss";
