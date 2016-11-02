@@ -1,8 +1,8 @@
 ---
 layout: page
-title: For Teams
-permalink: /teams/
-menu_title: Teams
+title: Team Registration
+permalink: /register/
+menu_title: Register
 menu_position: 5
 ---
 
