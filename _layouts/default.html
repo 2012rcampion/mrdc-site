@@ -7,6 +7,11 @@
     {% js jquery.js %}
     {% js bootstrap.js %}
     {% css main %}
+    {% if page.scripts %}
+      {% for script in page.scripts %}
+        {% js {{script}} %}
+      {% endfor %}
+    {% endif %}
     <link href="https://fonts.googleapis.com/css?family=Raleway:500|Open+Sans" rel="stylesheet">
   </head>
   <body>
