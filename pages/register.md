@@ -77,63 +77,82 @@ You can also check our [Facebook page]({{ site.facebook }}) or join the [mailing
     {% endfor %}
     <p>You may optionally register a faculty/corporate sponsor or a parent.  The sponsor will be allowed in the pit area during the competition, but will not be allowed to help with the robot.</p>
     <div class="row">
-    <div class="form-group col-sm-7">
-      <label class="control-label">Name</label>
-      <input type="text" class="form-control" name="SponsorName"
-        placeholder="Sponsor">
-    </div>
-    <div class="form-group col-sm-5">
-      <label class="control-label">T-shirt Size</label>
-      <div class="btn-group btn-group-justified" data-toggle="buttons">
-        {% for size in sizes %}
-          <label class="btn btn-sm btn-default">
-            <input type="radio" name="SponsorSize" value="{{size}}">{{size}}
-          </label>
-        {% endfor %}  
+      <div class="form-group col-sm-7">
+        <label class="control-label">Name</label>
+        <input type="text" class="form-control" name="SponsorName"
+          placeholder="Sponsor">
       </div>
-    </div>
-  </div>
-    
-    
-    
-    <div class="form-group">
-      <label for="inputPassword" class="control-label">Password</label>
-      <div class="form-inline row">
-        <div class="form-group col-sm-6">
-          <input type="password" data-minlength="6" class="form-control" id="inputPassword" placeholder="Password">
-          <div class="help-block">Minimum of 6 characters</div>
-        </div>
-        <div class="form-group col-sm-6">
-          <input type="password" class="form-control" id="inputPasswordConfirm" data-match="#inputPassword" data-match-error="Whoops, these don't match" placeholder="Confirm">
-          <div class="help-block with-errors"></div>
+      <div class="form-group col-sm-5">
+        <label class="control-label">T-shirt Size</label>
+        <div class="btn-group btn-group-justified" data-toggle="buttons">
+          {% for size in sizes %}
+            <label class="btn btn-sm btn-default">
+              <input type="radio" name="SponsorSize" value="{{size}}">{{size}}
+            </label>
+          {% endfor %}  
         </div>
       </div>
     </div>
+  </div> 
+  <div class="well">  
+    <legend>Rules and Legal Acceptance</legend>
+    <p>
+      Prior to continuing, please familiarize yourself and your team with the competition's rules, located on the <a href="{{ site.google_drive }}">the public Google Drive</a>.
+    </p>
     <div class="form-group">
-      <div class="radio">
+      <div class="checkbox">
         <label>
-          <input type="radio" name="underwear">
-          Boxers
+          <input type="checkbox" name="RulesAccept" data-error="Required" required>
+          Our team has read, accepted, and will abide by the competition's rules.
         </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="underwear">
-          Briefs
-        </label>
+        <div class="help-block with-errors"></div>
       </div>
     </div>
     <div class="form-group">
       <div class="checkbox">
         <label>
-          <input type="checkbox" id="terms" data-error="Before you wreck yourself">
-          Check yourself
+          <input type="checkbox" name="ModifyAccept" data-error="Required" required>
+          Our team acknowledges that the MRDC Committee and MRDC's corporate sponsor(s) can, at any time, modify the rules and have the final authority regarding competition decisions.
+        </label>
+        <div class="help-block with-errors"></div>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="checkbox">
+        <label>
+          <input type="checkbox" name="PhotoAccept" data-error="Required" required>
+          Our team grants the MRDC Committee and our corporate sponsors the ability to photograph, record, and publicize our actions and robot.
+        </label>
+        <div class="help-block with-errors"></div>
+      </div>
+    </div>
+    <legend>Deposit Check</legend>
+    <p>
+      Your team will not be officially registered until you send a check for $100 and payable to the "University of Illinois" to the MRDC Committee at:
+    </p>
+    <address>
+      <strong>ATTN: MRDC Director</strong><br>
+      103C Engineering Hall<br>
+      1308 West Green Street<br>
+      Urbana, IL 61801<br>
+    </address>
+    <p>
+      This check is not a fee, and only be cashed if your team does not attend the competition or causes damage to the competition venue.  Otherwise the check will be returned to you   
+    </p>
+    <!--<p>
+      The due date for this check is listed in the rules and is a hard deadline.
+    </p>-->
+    <div class="form-group">
+      <div class="checkbox">
+        <label>
+          <input type="checkbox" name="CheckAccept" data-error="Required" required>
+          Our team has read and accepts the above registration check notice.
         </label>
         <div class="help-block with-errors"></div>
       </div>
     </div>
   </div>
-  <div class="form-group">
-    <button type="submit" class="btn btn-primary">Submit</button>
+  <div class="form-group text-center">
+    <button type="submit" class="btn btn-lg btn-primary">Submit</button>
   </div>
 </form>
