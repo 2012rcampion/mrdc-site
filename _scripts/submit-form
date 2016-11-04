@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+
+curl \
+    --data-urlencode "TeamName=Midwestern Robotics Design Competition Committee (Test)" \
+    --data-urlencode "TeamAbbr=MRDCC" \
+    --data-urlencode "TeamSchool=University of Illinois at Urbana-Champaign" \
+    --data-urlencode "TeamEmail=rcampio2@illinois.edu" \
+    --data-urlencode "Member1Name=Michael Salceda (test)" \
+    --data-urlencode "Member1Size=L" \
+    --data-urlencode "Member2Name=Ted Stelling (test)" \
+    --data-urlencode "Member2Size=XL" \
+    --data-urlencode "Member3Name=Robert Campion (test)" \
+    --data-urlencode "Member4Name=Jessica Mo (test)" \
+    --data-urlencode "Member4Size=invalid size" \
+    --data-urlencode "Member5Name=" \
+    --data-urlencode "Member5Size=L" \
+    --data-urlencode "Member6Size=L" \
+    --data-urlencode "SponsorName=TEST TEST" \
+    --data-urlencode "SponsorSize=L" \
+    --data-urlencode "RulesAccept=on" \
+    --data-urlencode "ModifyAccept=on" \
+    --data-urlencode "PhotoAccept=on" \
+    --data-urlencode "CheckAccept=on" \
+    "http://mrdc.ec.illinois.edu/php-db-test/"
