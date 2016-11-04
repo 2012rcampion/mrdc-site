@@ -42,7 +42,7 @@ You can also check our [Facebook page]({{ site.facebook }}) or join the [mailing
     </div>
     <div class="form-group">
       <label for="inputTeamEmail" class="control-label">Contact Email</label>
-      <input type="email" class="form-control" id="inputTeamEmail" placeholder="" data-error="Please enter a valid email address" required>
+      <input type="email" class="form-control" id="inputTeamEmail" name="TeamEmail" placeholder="" data-error="Please enter a valid email address" required>
       <div class="help-block with-errors"></div>
     </div>
   </div>
