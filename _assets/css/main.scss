@@ -5,5 +5,17 @@
 @charset "utf-8";
 
 @import "variables.scss";
+
+@import "bootstrap-sprockets";
 @import "bootstrap";
+
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url(asset_path('bootstrap/#{$icon-font-name}.eot'));
+  src: url(asset_path('bootstrap/#{$icon-font-name}.eot?#iefix')) format('embedded-opentype'),
+       url(asset_path('bootstrap/#{$icon-font-name}.woff')) format('woff'),
+       url(asset_path('bootstrap/#{$icon-font-name}.ttf')) format('truetype'),
+       url(asset_path('bootstrap/#{$icon-font-name}.svg##{$icon-font-svg-id}')) format('svg');
+}
+
 @import "theme.scss";
