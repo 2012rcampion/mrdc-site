@@ -5,7 +5,12 @@ title: Home
 
 {% assign latest_post = site.posts[0] %}
 <div class="alert alert-success">
-<p class="lead">Latest news: {{ latest_post.title }}</p>
+<p class="lead">
+  Latest news:
+  <a href="{{ latest_post.url | prepend: site.baseurl }}" class="alert-link">
+    {{ latest_post.title }}
+  </a>
+  </p>
 </div>
 
 <div class="row">
@@ -20,7 +25,7 @@ title: Home
   {% for p in menu_pages %}
     {% if p.menu_position %}
       <div class="col-sm-6 extra-padding">
-        <a href="{{ p.url }}" class="btn btn-block btn-lg btn-primary">
+        <a href="{{ p.url | prepend: site.baseurl }}" class="btn btn-block btn-lg btn-primary">
           <h2>{{ p.title }}</h2>
         </a>
       </div>

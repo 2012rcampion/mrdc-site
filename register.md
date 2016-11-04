@@ -22,7 +22,7 @@ You can also check our [Facebook page]({{ site.facebook }}) or join the [mailing
 
 # Registration Form
 
-<form data-toggle="validator" role="form" action="http://mrdc.ec.illinois.edu/php-db-test/" method="post">
+<form data-toggle="validator" role="form" action="{{ site.baseurl }}/register_submit.php" method="post">
   <div class="well">
     <legend>Team Information</legend>
     <div class="form-group form-row-group">
@@ -62,7 +62,8 @@ You can also check our [Facebook page]({{ site.facebook }}) or join the [mailing
       <div class="row">
         <div class="form-group col-sm-7">
           <input type="text" class="form-control" name="Member{{i}}Name"
-            placeholder="{% if i == 1 %}Team Captain{% else %}Team Member {{i}}{% endif %}">
+            placeholder="{% if i == 1 %}Team Captain{% else %}Team Member {{i}}{% endif %}"
+            {% if i == 1 %}required{% endif %}>
         </div>
         <div class="form-group col-sm-5">
           <div class="btn-group btn-group-justified" data-toggle="buttons">

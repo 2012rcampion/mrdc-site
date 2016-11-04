@@ -1,0 +1,1 @@
+rsync -av --del -e ssh _site/ robotdesign@web.engr.illinois.edu:~/new_site/

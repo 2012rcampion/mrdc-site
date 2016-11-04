@@ -21,4 +21,4 @@ curl \
     --data-urlencode "ModifyAccept=on" \
     --data-urlencode "PhotoAccept=on" \
     --data-urlencode "CheckAccept=on" \
-    "http://mrdc.ec.illinois.edu/php-db-test/"
+    "http://mrdc.ec.illinois.edu/test_new_site/register_submit.php"
