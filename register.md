@@ -4,7 +4,7 @@ title: Team Registration
 permalink: /register/
 menu_title: Register
 menu_position: 5
-scripts: [bootstrap-validator]
+scripts: [bootstrap-validator, register]
 ---
 
 # Information for Teams
@@ -40,39 +40,46 @@ You can also check our [Facebook page]({{ site.facebook }}) or join the [mailing
       <label for="inputTeamSchool" class="control-label">School</label>
       <input type="text" class="form-control" id="inputTeamSchool" name="TeamSchool" placeholder="" required>
     </div>
-    <div class="form-group">
+    <!--div class="form-group">
       <label for="inputTeamEmail" class="control-label">Contact Email</label>
       <input type="email" class="form-control" id="inputTeamEmail" name="TeamEmail" placeholder="" data-error="Please enter a valid email address" required>
       <div class="help-block with-errors"></div>
-    </div>
+    </div-->
   </div>
   <div class="well">
     <legend>Team Members</legend>
     <p>Your team may have as many people as you like, but only the team captain and five official members listed here will be allowed in the pit area during the competition.</p>
     {% assign sizes = 'S,M,L,XL,XXL' | split: ',' %}
-    <div class="row">
-      <div class="form-group form-row-group col-sm-7">
-          <label class="control-label">Name</label>
-      </div>
-      <div class="form-group form-row-group col-sm-5">
-          <label class="control-label">T-shirt Size</label>
-      </div>
-    </div>
     {% for i in (1..6) %}
-      <div class="row">
-        <div class="form-group col-sm-7">
-          <input type="text" class="form-control" name="Member{{i}}Name"
-            placeholder="{% if i == 1 %}Team Captain{% else %}Team Member {{i}}{% endif %}"
-            {% if i == 1 %}required{% endif %}>
+      <div class="form-group">
+        <label class="control-label">
+          {% if i == 1 %}
+            Team Captain
+          {% else %}
+            Team Member {{i}}
+          {% endif %}
+        </label>
+        <input type="text" class="form-control collapse-control" name="Member{{i}}Name" placeholder="Name" {% if i == 1 %}required{% endif %}>
+      </div>
+      <div>
+        <div class="form-group">
+          <input type="email" class="form-control" name="Member{{i}}Email" placeholder="Email" data-error="Please enter a valid email address">
+          <div class="help-block with-errors"></div>
         </div>
-        <div class="form-group col-sm-5">
-          <div class="btn-group btn-group-justified" data-toggle="buttons">
+        <div class="form-group">
+          <input type="tel" class="form-control" name="Member{{i}}Phone" placeholder="Phone Number" data-error="Please enter a valid phone number" pattern="([^0-9]*[0-9]){10}.*">
+          <div class="help-block with-errors"></div>
+        </div>
+        <div class="form-group">
+          <span class="control-label">T-shirt size: </span>
+          <div class="btn-group" data-toggle="buttons">
             {% for size in sizes %}
               <label class="btn btn-sm btn-default">
                 <input type="radio" name="Member{{i}}Size" value="{{size}}">{{size}}
               </label>
             {% endfor %}  
           </div>
+          <div class="help-block with-errors"></div>
         </div>
       </div>
     {% endfor %}
