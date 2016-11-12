@@ -84,23 +84,31 @@ You can also check our [Facebook page]({{ site.facebook }}) or join the [mailing
       </div>
     {% endfor %}
     <p>You may optionally register a faculty/corporate sponsor or a parent.  The sponsor will be allowed in the pit area during the competition, but will not be allowed to help with the robot.</p>
-    <div class="row">
-      <div class="form-group col-sm-7">
-        <label class="control-label">Name</label>
-        <input type="text" class="form-control" name="SponsorName"
-          placeholder="Sponsor">
+    <div class="form-group">
+        <label class="control-label">Sponsor</label>
+        <input type="text" class="form-control collapse-control" name="SponsorName" placeholder="Name">
       </div>
-      <div class="form-group col-sm-5">
-        <label class="control-label">T-shirt Size</label>
-        <div class="btn-group btn-group-justified" data-toggle="buttons">
-          {% for size in sizes %}
-            <label class="btn btn-sm btn-default">
-              <input type="radio" name="SponsorSize" value="{{size}}">{{size}}
-            </label>
-          {% endfor %}  
+      <div>
+        <div class="form-group">
+          <input type="email" class="form-control" name="SponsorEmail" placeholder="Email" data-error="Please enter a valid email address">
+          <div class="help-block with-errors"></div>
+        </div>
+        <div class="form-group">
+          <input type="tel" class="form-control" name="SponsorPhone" placeholder="Phone Number" data-error="Please enter a valid phone number" pattern="([^0-9]*[0-9]){10}.*">
+          <div class="help-block with-errors"></div>
+        </div>
+        <div class="form-group">
+          <span class="control-label">T-shirt size: </span>
+          <div class="btn-group" data-toggle="buttons">
+            {% for size in sizes %}
+              <label class="btn btn-sm btn-default">
+                <input type="radio" name="SponsorSize" value="{{size}}">{{size}}
+              </label>
+            {% endfor %}  
+          </div>
+          <div class="help-block with-errors"></div>
         </div>
       </div>
-    </div>
   </div> 
   <div class="well">  
     <legend>Rules and Legal Acceptance</legend>
