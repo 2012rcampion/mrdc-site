@@ -24,10 +24,10 @@ $pdo->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
 
 // ==========
 
-$sql = 'SELECT Id, Name, Abbr, School, Email, Agreed, DATE_FORMAT(Submitted, \'%l:%i %p, %M %D, %Y\') as Submitted FROM RegistrationTeams'; 
+$sql = 'SELECT Id, Name, Abbr, School, Agreed, DATE_FORMAT(Submitted, \'%l:%i %p, %M %D, %Y\') as Submitted FROM RegistrationTeams'; 
 $teams = $pdo->query($sql);
 
-$sql = 'SELECT Name, Type, ShirtSize FROM RegistrationMembers WHERE TeamId = ?'; 
+$sql = 'SELECT Name, Type, ShirtSize, Email, Phone FROM RegistrationMembers WHERE TeamId = ?'; 
 $statement = $pdo->prepare($sql);
 
 foreach($teams as $team):?>
@@ -37,8 +37,6 @@ foreach($teams as $team):?>
   <dl class="dl-horizontal">
     <dt>School</dt>
     <dd><?= htmlspecialchars($team['School']) ?></dd>
-    <dt>Email</dt>
-    <dd><?= htmlspecialchars($team['Email']) ?></dd>
     <dt>Agreed</dt>
     <dd><?= $team['Agreed'] ? 'Yes' : 'No' ?></dd>
     <dt>Submitted</dt>
@@ -54,9 +52,14 @@ foreach($teams as $team):?>
       <?php if($member['Type'] != 'Member'): ?>
         (<?= $member['Type'] ?>)
       <?php endif; ?>
-      <span class="pull-right">
-        <?= $member['ShirtSize'] ?>
-      </span>
+      <dl class="dl-horizontal">
+        <dt>Email</dt>
+        <dd><?= htmlspecialchars($member['Email']) ?></dd>
+        <dt>Phone</dt>
+        <dd><?= htmlspecialchars($member['Phone']) ?></dd>
+        <dt>Size</dt>
+        <dd><?= $member['ShirtSize'] ?></dd>
+      </dl>
     </li>
   <?php endforeach; ?>
   </ul>
