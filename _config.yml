@@ -20,8 +20,8 @@ email_teams_signup: https://lists.illinois.edu/lists/sigrequest/mrdc-teams-l
 google_drive: https://drive.google.com/drive/u/0/folders/0Bwo3CMq0xEayQ2VzSWpBaTRnUGs
 facebook: https://www.facebook.com/EOHMRDC/
 
-baseurl: "/test_new_site" # the subpath of your site, e.g. /blog
-url: "" # "http://mrdc.ec.illinois.edu" # the base hostname & protocol for your site
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://mrdc.ec.illinois.edu" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown

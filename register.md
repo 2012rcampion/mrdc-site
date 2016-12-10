@@ -10,15 +10,19 @@ scripts: [bootstrap-validator, register]
 # Information for Teams
 
 Thank you for your interest in the Midwestern Robotics Design Competition (MRDC).
-The deadline for registration is January 18th, 2016. Please also note that a $100 check made payable to the University of Illinois 
-is required in order to be registered, which must also be received by January 18th. The check is returned to you if you attend the competition.
-More details are on the registration form.
+The deadline for registration is January 18th, 2017. Please note that the $100
+deposit check, made payable to the Midwestern Robotics Design Competition,
+is required in order for your registration to be completed.  The check must be
+received by the January 18th deadline. The check is returned to you if you
+attend the competition.  See the registration form for details.
 
 In order to enter, please complete the registration form below.
 
-Please fill out the form completely. T-Shirts will be assigned based upon choices submitted here.
-Course information is already available.  We post information in three locations, one of which is under the News tab above.
-You can also check our [Facebook page]({{ site.facebook }}) or join the [mailing list]({{ site.email_teams_signup }}) to keep up to date.
+Please fill out the form completely. T-Shirts will be assigned based upon
+choices submitted here.  Course information is already available.  We post
+information in three locations, one of which is under the News tab above.
+You can also check our [Facebook page]({{ site.facebook }}) or join the
+[mailing list]({{ site.email_teams_signup }}) to keep up to date.
 
 # Registration Form
 
@@ -144,7 +148,8 @@ You can also check our [Facebook page]({{ site.facebook }}) or join the [mailing
     </div>
     <legend>Deposit Check</legend>
     <p>
-      Your team will not be officially registered until you send a check for $100 and payable to the "University of Illinois" to the MRDC Committee at:
+      Your team will not be officially registered until you send a check for
+      $100 payable to the "Midwestern Robotics Design Competition" to the MRDC Committee at:
     </p>
     <address>
       <strong>ATTN: MRDC Director</strong><br>
@@ -153,11 +158,13 @@ You can also check our [Facebook page]({{ site.facebook }}) or join the [mailing
       Urbana, IL 61801<br>
     </address>
     <p>
-      This check is not a fee, and only be cashed if your team does not attend the competition or causes damage to the competition venue.  Otherwise the check will be returned to you   
+      This check is not a fee, and only be cashed if your team does not attend
+      the competition or causes damage to the competition venue.  Otherwise
+      the check will be returned to you.
     </p>
-    <!--<p>
-      The due date for this check is listed in the rules and is a hard deadline.
-    </p>-->
+    <p>
+      Please submit <a href="https://drive.google.com/file/d/0B0VNJlWZGkwNR1c4WUJIR3l4LW8/view?usp=sharing">this deposit form</a> along with your check.
+    </p>
     <div class="form-group">
       <div class="checkbox">
         <label>
