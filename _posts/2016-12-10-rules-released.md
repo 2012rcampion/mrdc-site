@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  2017 Rules Released
-date:   2016-10-13 21:26:32 -0500
+date:   2016-12-10 12:26:32 -0500
 ---
 
 We have released the first version of the rules for this year's competition.  You can find it on the [public drive]({{ site.google_drive }}) and embedded below.  Changes from last year's rules have been highlighted in red, but we strongly suggest reading the entire thing.
