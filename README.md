@@ -40,5 +40,5 @@ And you're done!
 
 Since Jekyll generates a static site, you can just copy the `_site` directory to the webserver, e.g:
 
-    rsync -av --del -e ssh _site/ robotdesign@web.engr.illinois.edu:~/path/to/www
+    rsync -av --del -e ssh _site/ robotdesign@robotdesign.web.engr.illinois.edu:~/new_site
 
