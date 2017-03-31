@@ -1,9 +1,12 @@
 ---
 layout: page
 title: Team Registration
-permalink: /register/
-menu_title: Register
-menu_position: 5
+
+[comment]: # permalink: /register/
+
+[comment]: # menu_title: Register
+
+[comment]: # menu_position: 5
 scripts: [bootstrap-validator, register]
 ---
 

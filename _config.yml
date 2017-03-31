@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Midwestern Robotics Design Competition
-email_comm: mrdc-comm-l@lists.illinois.edu
+email_comm: mrdc@lists.illinois.edu
 email_teams: mrdc-teams-l@lists.illinois.edu
 email_teams_signup: https://lists.illinois.edu/lists/sigrequest/mrdc-teams-l
 google_drive: https://drive.google.com/drive/u/0/folders/0Bwo3CMq0xEayQ2VzSWpBaTRnUGs

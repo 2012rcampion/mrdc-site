@@ -8,7 +8,7 @@ We have released the first version of the rules for this year's competition.  Yo
 
 Keep in mind that this is a preliminary version of the rules, and that game rules will be modified and clarified as the mechanics are developed.
 
-If you have any questions, please send them to [{{ site.email }}](mailto:{{ site.email }}) and we will answer them as soon as we are able.
+If you have any questions, please send them to [{{ site.email_comm }}](mailto:{{ site.email_comm }}) and we will answer them as soon as we are able.
 
 
 <iframe src="https://drive.google.com/file/d/0B9t_FvctPBdiUGFnQ2JQZDBXU2s/preview" width="100%" height="500"></iframe>
