@@ -16,8 +16,8 @@ Every March, robotics teams from Universities across the Midwest converge upon t
 
 Competitors and their robots will compete against each other during Engineer Open House at the University of Illinois at Urbana-Champaign from:
 
-* **9:00 am until 4:00 pm on Friday March 10, 2017**
-* **9:00 am until 3:00 pm on Saturday March 11, 2017**
+* **9:00 am until 4:00 pm on Friday, March 9, 2018**
+* **9:00 am until 3:00 pm on Saturday, March 10, 2018**
 
 For directions to Kenney Gym Annex, which is across the street from Grainger Library, visit Google Maps or enter 1301 W Springfield Ave, Urbana, IL 61801 into your preferred trip planner.
 For more information on Engineering Open House or its exhibits visit [eoh.ec.illinois.edu](http://eoh.ec.illinois.edu)
