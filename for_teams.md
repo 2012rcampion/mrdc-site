@@ -1,17 +1,20 @@
 ---
 layout: page
-title: Team Registration
-
-[comment]: # permalink: /register/
-
-[comment]: # menu_title: Register
-
-[comment]: # menu_position: 5
+title: For Teams
+permalink: /team_info/
+menu_title: For Teams
 scripts: [bootstrap-validator, register]
 ---
 
-# Information for Teams
+# Team Registration
 
+Thank you for your interest in the Midwestern Robotics Design Competition. The 2017 MRDC has completed and preparations for the 2018 MRDC are underway. 
+
+Sign up for the [mailing list]({{ site.e-mail_teams_signup }}) or check our [Facebook page]({{ site.facebook }}) to stay up to date.
+
+<!-- Uncomment the below block when registration is open and change the dates/info as appropriate. -->
+
+<!--
 Thank you for your interest in the Midwestern Robotics Design Competition (MRDC).
 The deadline for registration is January 18th, 2017. Please note that the $100
 deposit check, made payable to the Midwestern Robotics Design Competition,
@@ -21,7 +24,7 @@ attend the competition.  See the registration form for details.
 
 In order to enter, please complete the registration form below.
 
-Please fill out the form completely. T-Shirts will be assigned based upon
+Please fill out the form completely. T-shirts will be assigned based upon
 choices submitted here.  Course information is already available.  We post
 information in three locations, one of which is under the News tab above.
 You can also check our [Facebook page]({{ site.facebook }}) or join the
@@ -47,11 +50,11 @@ You can also check our [Facebook page]({{ site.facebook }}) or join the
       <label for="inputTeamSchool" class="control-label">School</label>
       <input type="text" class="form-control" id="inputTeamSchool" name="TeamSchool" placeholder="" required>
     </div>
-    <!--div class="form-group">
+    <div class="form-group">
       <label for="inputTeamEmail" class="control-label">Contact Email</label>
       <input type="email" class="form-control" id="inputTeamEmail" name="TeamEmail" placeholder="" data-error="Please enter a valid email address" required>
       <div class="help-block with-errors"></div>
-    </div-->
+    </div>
   </div>
   <div class="well">
     <legend>Team Members</legend>
@@ -181,4 +184,5 @@ You can also check our [Facebook page]({{ site.facebook }}) or join the
   <div class="form-group text-center">
     <button type="submit" class="btn btn-lg btn-primary">Submit</button>
   </div>
-</form>
+</form> 
+-->

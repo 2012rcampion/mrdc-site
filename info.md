@@ -1,7 +1,7 @@
 ---
 layout: page
-permalink: /info/
-title: Competition Info
+permalink: /general_info/
+title: General Information
 menu_title: Info
 menu_position: 3
 ---
