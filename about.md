@@ -36,7 +36,7 @@ If you would like to learn more about us, our contact information is below.
 
 You can email the MRDC committee at [{{ site.email_comm }}](mailto:{{ site.email_comm }}).
 
-Teams should use the teams mailing list at [{{ site.email_teams }}](mailto:{{ site.email_teams }}).  You can sign up to receive news via the mailing list [here](site.email_teams).
+Teams should use the teams mailing list at [{{ site.email_teams }}](mailto:{{ site.email_teams }}).  You can sign up to receive news via the mailing list [here]({{site.email_teams_signup}}).
 
 Physical mail should be addressed to:
 

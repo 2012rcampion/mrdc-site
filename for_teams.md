@@ -10,7 +10,7 @@ scripts: [bootstrap-validator, register]
 
 Thank you for your interest in the Midwestern Robotics Design Competition. The 2017 MRDC has completed and preparations for the 2018 MRDC are underway. 
 
-Sign up for the [mailing list]({{ site.e-mail_teams_signup }}) or check our [Facebook page]({{ site.facebook }}) to stay up to date.
+Sign up for the [mailing list]({{ site.email_teams_signup }}) or check our [Facebook page]({{ site.facebook }}) to stay up to date.
 
 <!-- Uncomment the below block when registration is open and change the dates/info as appropriate. -->
 
